@@ -1,0 +1,87 @@
+
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Eladeco - Tinta Rahasia dan Buku Tahan Air</title>
+    <link href="https://cdn.jsdelivr.net/npm/tailwindcss@2.0.3/dist/tailwind.min.css" rel="stylesheet">
+    <style>
+        .fade-in { animation: fadeIn 2s ease-in; }
+        @keyframes fadeIn {
+            0% { opacity: 0; }
+            100% { opacity: 1; }
+        }
+    </style>
+</head>
+<body class="bg-gray-100 font-sans">
+
+<!-- Navbar -->
+<nav class="bg-green-600 p-4">
+    <div class="flex justify-between items-center">
+        <h1 class="text-white text-3xl font-bold">Eladeco</h1>
+        <ul class="flex space-x-4 text-white">
+            <li><a href="#produk" class="hover:underline">Produk</a></li>
+            <li><a href="#pesanan" class="hover:underline">Pesan</a></li>
+            <li><a href="#kontak" class="hover:underline">Kontak</a></li>
+        </ul>
+    </div>
+</nav>
+
+<!-- Hero Section -->
+<section class="bg-green-700 text-white text-center py-16">
+    <h2 class="text-4xl font-bold">Tinta Rahasia dan Buku Tahan Air Eladeco</h2>
+    <p class="mt-4 text-lg">Inovasi terbaru dalam dunia tinta dan buku, tahan lama, tidak mudah hilang, dan ramah lingkungan.</p>
+</section>
+
+<!-- Produk -->
+<section id="produk" class="py-16 bg-gray-50 text-center">
+    <h2 class="text-3xl font-bold text-green-600">Produk Kami</h2>
+    <div class="mt-8 grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-8">
+        <div class="bg-white p-6 rounded shadow-lg">
+            <img src="https://cdn.openai.com/chat-assets/user-uploads/file_000000002d6c61f8ac53ff79862b63d0.png" alt="Tinta Rahasia" class="w-full h-40 object-cover rounded mb-4">
+            <h3 class="text-xl font-semibold">Tinta Rahasia</h3>
+            <p>Tinta yang hanya terlihat dengan semprotan khusus, aman dari pemalsuan.</p>
+        </div>
+        <div class="bg-white p-6 rounded shadow-lg">
+            <img src="https://cdn.openai.com/chat-assets/user-uploads/file_000000008664622f9706d354401f1fec.png" alt="Buku Tahan Air" class="w-full h-40 object-cover rounded mb-4">
+            <h3 class="text-xl font-semibold">Buku Tahan Air</h3>
+            <p>Buku yang tahan terhadap air dan mudah dibawa kemana saja.</p>
+        </div>
+    </div>
+</section>
+
+<!-- Pemesanan -->
+<section id="pesanan" class="py-16 bg-white text-center">
+    <h2 class="text-3xl font-bold text-green-600">Formulir Pemesanan</h2>
+    <form action="#" method="POST" class="mt-8 space-y-4 max-w-md mx-auto">
+        <input type="text" name="name" placeholder="Nama Lengkap" class="w-full p-4 border rounded" required>
+        <input type="email" name="email" placeholder="Email" class="w-full p-4 border rounded" required>
+        <input type="tel" name="whatsapp" placeholder="Nomor WhatsApp" class="w-full p-4 border rounded" required>
+        <select name="product" class="w-full p-4 border rounded" required>
+            <option value="tinta">Tinta Rahasia</option>
+            <option value="buku">Buku Tahan Air</option>
+        </select>
+        <select name="payment" class="w-full p-4 border rounded" required>
+            <option value="cod">Cash On Delivery (COD)</option>
+            <option value="digital_wallet">Dompet Digital</option>
+        </select>
+        <button type="submit" class="w-full p-4 bg-green-600 text-white rounded hover:bg-green-700">Pesan Sekarang</button>
+    </form>
+</section>
+
+<!-- Kontak -->
+<section id="kontak" class="py-16 bg-gray-50 text-center">
+    <h2 class="text-3xl font-bold text-green-600">Hubungi Kami</h2>
+    <p class="mt-4">Tanya tentang produk kami atau ajukan pertanyaan melalui kontak berikut:</p>
+    <p class="mt-2 text-xl">WhatsApp: <a href="tel:+6281575588529" class="text-green-600">081575588529</a></p>
+    <p>Email: <a href="mailto:info@eladeco.com" class="text-green-600">info@eladeco.com</a></p>
+</section>
+
+<!-- Footer -->
+<footer class="bg-green-600 text-white text-center py-4">
+    <p>&copy; 2025 Eladeco. Semua Hak Dilindungi.</p>
+</footer>
+
+</body>
+</html>
